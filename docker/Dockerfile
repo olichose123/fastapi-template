@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists
 
-EXPOSE 8080
+EXPOSE 8000
 COPY poetry.lock pyproject.toml ./
 
 RUN poetry install --only main;
